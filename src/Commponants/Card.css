@@ -1,0 +1,51 @@
+
+  
+  /* استجابة للشاشات */
+  @media (max-width: 768px) {
+    .Carcon {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+   
+  
+    .h-44 {
+      height: auto; /* جعل ارتفاع القسم المحتوي على النصوص تلقائي */
+    }
+  
+    .font-bold {
+      font-size: 14px; /* تقليل حجم الخط للشاشات الصغيرة */
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px ;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .bg-cover {
+      height: 120px; /* تقليل ارتفاع الصورة للشاشات الصغيرة جدًا */
+    }
+  
+    .font-bold {
+      font-size: 12px; /* تقليل حجم الخط أكثر للشاشات الصغيرة جدًا */
+    }
+  }
+  

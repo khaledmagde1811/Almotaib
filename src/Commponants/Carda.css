@@ -1,0 +1,51 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.bg-cover {
+  width: 100%;
+  height: 200px; /* ارتفاع الصورة يمكن تعديله بناءً على الاحتياج */
+  object-fit: cover;
+}
+
+.hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.h-44 {
+  height: 110px; /* ارتفاع القسم المحتوي على النصوص */
+}
+
+@media (max-width: 480px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px ;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024) {
+  .background-gradient {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px ;
+  }
+}

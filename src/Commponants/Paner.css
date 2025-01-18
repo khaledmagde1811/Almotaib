@@ -1,0 +1,25 @@
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 583px;
+    overflow: hidden;
+  }
+  
+  .home-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية شبه شفافة */
+    display: flex;
+   
+    flex-direction: row;
+    color: #fff;
+  }

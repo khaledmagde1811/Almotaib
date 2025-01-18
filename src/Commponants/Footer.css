@@ -1,0 +1,61 @@
+.footer-background {
+    background-color: #0f1636; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 10px 0;
+    
+    display: flex; 
+    justify-content: center; 
+    justify-content: space-around;
+  }
+  
+  .footer-link {
+    color: #fff; /* لون الروابط */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #ddd; /* لون الروابط عند التمرير */
+  }
+  
+  .footer-phone {
+    margin: 0;
+  }
+  
+  .footer-icon {
+    font-size: 1.5rem; /* حجم الأيقونات */
+    color: #fff; /* لون الأيقونات */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: #ddd; /* لون الأيقونات عند التمرير */
+  }
+  
+  /* استجابة للشاشات */
+  @media (max-width: 768px) {
+    .footer-background {
+      text-align: center;
+    }
+    .footer-link,
+    .footer-phone {
+      font-size: 0.875rem; /* تقليل حجم الخط للشاشات الصغيرة */
+    }
+    .footer-icon {
+      font-size: 1.25rem; /* تقليل حجم الأيقونات للشاشات الصغيرة */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-background {
+      text-align: center;
+    }
+    .footer-link,
+    .footer-phone {
+      font-size: 0.75rem; /* تقليل حجم الخط للشاشات الصغيرة جدًا */
+    }
+    .footer-icon {
+      font-size: 1rem; /* تقليل حجم الأيقونات للشاشات الصغيرة جدًا */
+    }
+  }
+  
